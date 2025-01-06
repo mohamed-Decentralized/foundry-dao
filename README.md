@@ -1,6 +1,6 @@
 # Foundry DAO Governance
 
-This repository contains the implementation of a custom governance contract, `MyGovernor`, which integrates multiple extensions from OpenZeppelin's Governance framework. It combines the features of token-based voting, quorum calculation, proposal execution, and timelock control to create a full-featured governance system for decentralized organizations.
+This repository contains the implementation of a custom governance contract, which integrates multiple extensions from OpenZeppelin's Governance framework. It combines the features of token-based voting, quorum calculation, proposal execution, and timelock control to create a full-featured governance system for decentralized organizations.
 
 ---
 
