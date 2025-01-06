@@ -1,66 +1,23 @@
-## Foundry
+# Foundry DAO Governance
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This repository contains the implementation of a custom governance contract, `MyGovernor`, which integrates multiple extensions from OpenZeppelin's Governance framework. It combines the features of token-based voting, quorum calculation, proposal execution, and timelock control to create a full-featured governance system for decentralized organizations.
 
-Foundry consists of:
+---
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Features
 
-## Documentation
+`MyGovernor` inherits from several OpenZeppelin contracts, enabling the following features:
 
-https://book.getfoundry.sh/
+- **Voting**: Token holders participate in governance proposals.
+- **Quorum**: A percentage of the total supply of tokens must vote in favor for a proposal to pass.
+- **Timelock**: Execution of proposals is delayed for a predefined time period to allow for the possibility of reversals.
+- **Proposal Lifecycle**: Allows for the creation, execution, and cancellation of proposals, as well as tracking proposal states.
 
-## Usage
+## Installation
 
-### Build
-
-```shell
-$ forge build
 ```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
+git clone https://github.com/mohamed-Decentralized/foundry-dao.git
+cd foundry-dao
+forge install
+forge build
 ```
